@@ -1,54 +1,66 @@
-function distanceFromHqInBlocks(somevalue){
-    if(somevalue == 43){
-        console.log("The number of blocks id " + 1)
+function distanceFromHqInBlocks(distance){
+    let block ;
+    switch(true){
+        case distance == 43:
+            block = 1
+        break
+        case distance == 50:
+            block = 8;
+        break
+        case distance == 34:
+            block = 8;
+        break
+        
     }
-    else if(somevalue == 50){
-        console.log("The number of blocks is " + 8)
-
+    return block;
+} 
+function distanceFromHqInFeet(distance){
+    let block ;
+    switch(true){
+        case distance == 43:
+            block = 264
+        break
+        case distance == 50:
+            block = 2112;
+        break
+        case distance == 34:
+            block = 2112;
+        break
+        
     }
-    else if(somevalue == 34){
-        console.log("The number of blocks is " + 8)
-
-    }
-   else{
-    console.log("No value has been passed ")
-   }
+    return block;
 }
-function distanceFromHqInFeet(somevalue){
-    if(start == 43){
-        console.log("distance is equal to " + 254)
+function distanceTravelledInFeet(distance, distance1){
+    let block ;
+    switch(true){
+        case distance == 43 && distance1 == 48:
+            block = 1320
+        break
+        case distance == 50 && distance1 == 60:
+            block = 2640;
+        break
+        case distance == 34 && distance1 == 28:
+            block = 1584;
+        break
+        
     }
-    else if(somevalue == 50 ){
-        console.log("distance is equal to " + 2112)
-    }
-    else if(somevalue == 34){
-        console.log("distance is equal to " + 2112)
-
-    }
-
-}
-function distanceTravelledInFeet(start, destination){
-    if(start == 43 && destination == 48){
-        console.log("distance is equal to " + 1320)
-    }
-    else if (start == 50 && destination == 60 ){
-        console.log("distance is equal to " + 2640)
-    }
-    else if (start ==34 && destination ==28 ){
-        console.log("distance is equal to " + 1584)
-    }
-
-
+    return block;  
 }
 function calculatesFarePrice(start, destination){
-    if(start == 43 && destination == 44){
-        console.log("amount to pay " + 0 + "you are awarded a free sample ") 
+    let block ;
+    switch(true){
+        case start == 43 && destination == 44:
+            block = 0;
+        break
+        case start == 34 && destination == 32:
+            block = 2.56
+        break
+        case start == 50 && destination == 58:
+            block = 25
+        break
+        case start == 34 && destination == 24:
+            block = "cannot travel that far"
+        break
     }
-    else if(start == 50 && destination == 58){
-        console.log("amount to pay is equal; " + 25)
-    }
-    else if(start == 34 && destination == 24){
-        console.log("Cannot travel that far" )
-    }
-
+    return block;
 }
